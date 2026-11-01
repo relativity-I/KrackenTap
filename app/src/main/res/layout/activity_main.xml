@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="150dp"
-        android:text="Вы нанесли: 5 урона"
+        android:text="Вы нанесли: 0 урона"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -32,15 +32,16 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/kracken"
+        android:id="@+id/kraken"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="tap"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.5"
-        app:srcCompat="@drawable/krackentaptap" />
+        app:srcCompat="@drawable/krakentaptap" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
