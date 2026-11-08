@@ -33,28 +33,11 @@ public class MainActivity extends AppCompatActivity {
         textTop = findViewById(R.id.textTop);
         textDown = findViewById(R.id.textDown);
         kraken = findViewById(R.id.kraken);
-        loadKraken();
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        savekraken();
     }
 
     public void tap(View view) {
         int randomNtaps = (int) (Math.random() * 6) + 2;
         nTaps = nTaps + randomNtaps;
         textDown.setText("Вы нанесли: " + nTaps + " / 1000");
-    }
-
-
-    public void savekraken() {
-        SharedPreferences prefs = getSharedPreferences("AttackPrefs", Context.MODE_PRIVATE);
-        prefs.edit().putInt("num taps", nTaps).apply();
-    }
-    public void loadKraken() {
-        SharedPreferences prefs = getSharedPreferences("AttackPrefs", Context.MODE_PRIVATE);
-        nTaps = prefs.getInt("num taps", 0);
     }
 }
