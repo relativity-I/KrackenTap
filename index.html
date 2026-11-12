@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>relativity-I — разработчик и автор KrackenTap</title>
+<style>
+:root{--bg:#f4f8fb;--card:#fff;--ink:#12212e;--mute:#587084;--acc:#0e7c86;--acc2:#e4572e;--line:#d6e2ea;--hero1:#0b3c5d;--hero2:#0e7c86;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0c1620;--card:#13222f;--ink:#e6eff5;--mute:#8fa8b9;--acc:#3fc1c9;--acc2:#ff7a52;--line:#23394a;--hero1:#06202f;--hero2:#0a4a55}}
+:root[data-theme="dark"]{--bg:#0c1620;--card:#13222f;--ink:#e6eff5;--mute:#8fa8b9;--acc:#3fc1c9;--acc2:#ff7a52;--line:#23394a;--hero1:#06202f;--hero2:#0a4a55}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.5}
+.w{max-width:860px;margin:0 auto;padding:0 18px}
+header{background:linear-gradient(135deg,var(--hero1),var(--hero2));color:#fff;padding:44px 0 56px;position:relative;overflow:hidden}
+header:after{content:"🦑";position:absolute;right:-10px;bottom:-30px;font-size:150px;opacity:.15;transform:rotate(-12deg)}
+.tag{display:inline-block;font:600 12px ui-monospace,Menlo,monospace;background:rgba(255,255,255,.16);padding:4px 10px;border-radius:99px;letter-spacing:.5px}
+h1{font-size:clamp(34px,8vw,54px);margin:14px 0 6px;letter-spacing:-1px}
+header p{margin:0;max-width:520px;opacity:.9;font-size:17px}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+a.b{display:inline-block;padding:11px 18px;border-radius:10px;text-decoration:none;font-weight:600;font-size:15px}
+a.b.p{background:var(--acc2);color:#fff}
+a.b.s{background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.35)}
+section{padding:34px 0 6px}
+h2{font-size:26px;margin:0 0 14px;letter-spacing:-.5px}
+h2 small{font-size:14px;color:var(--mute);font-weight:500;margin-left:6px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+.proj{display:flex;gap:16px;align-items:flex-start;flex-wrap:wrap}
+.ico{font-size:44px;line-height:1;background:var(--bg);border-radius:14px;padding:12px}
+.proj h3{margin:0 0 4px;font-size:21px}
+.proj p{margin:0 0 10px;color:var(--mute)}
+.chip{display:inline-block;font:600 12px ui-monospace,monospace;color:var(--acc);border:1px solid var(--acc);border-radius:99px;padding:2px 9px;margin-right:6px}
+.proj a{color:var(--acc2);font-weight:600;text-decoration:none}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}
+.stats div{text-align:center;padding:12px 4px}
+.stats b{display:block;font-size:24px;color:var(--acc)}
+.stats span{font-size:12px;color:var(--mute)}
+.bar{position:sticky;top:0;z-index:5;background:var(--bg);padding:10px 0 8px;padding-top:calc(10px + env(safe-area-inset-top,0px));margin-top:-10px}
+body:before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:6}
+input{width:100%;font:inherit;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--ink)}
+input:focus{outline:2px solid var(--acc);border-color:transparent}
+.f{display:flex;gap:6px;overflow-x:auto;padding:10px 0 2px}
+.f button{flex:none;font:600 13px inherit;font-family:inherit;padding:7px 12px;border-radius:99px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer}
+.f button.on{background:var(--acc);color:#fff;border-color:var(--acc)}
+.g{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;margin-top:8px}
+.t{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
+.t em{font:600 11px ui-monospace,monospace;color:var(--acc2);text-transform:uppercase;font-style:normal;letter-spacing:.6px}
+.t h4{margin:3px 0 4px;font-size:16px}
+.t p{margin:0;font-size:14px;color:var(--mute)}
+#no{display:none;text-align:center;color:var(--mute);padding:24px}
+footer{margin-top:40px;padding:22px 0;border-top:1px solid var(--line);text-align:center;color:var(--mute);font-size:13px}
+footer a{color:var(--acc)}
+</style>
+</head>
+<body>
+<header><div class="w">
+<span class="tag">@relativity-I · GitHub с ноября 2026</span>
+<h1>relativity-I</h1>
+<p>Пишу игры на Java. Автор «лучшей игры 2026 года» про тапы по Кракену.</p>
+<div class="cta">
+<a class="b p" href="https://github.com/relativity-I/KrackenTap">Смотреть KrackenTap</a>
+<a class="b s" href="https://github.com/relativity-I">Мой GitHub</a>
+<a class="b s" href="#gloss">Словарик</a>
+</div>
+</div></header>
+
+<main class="w">
+<section>
+<h2>Проекты</h2>
+<div class="card proj">
+<div class="ico">🐙</div>
+<div style="flex:1;min-width:200px">
+<h3>KrackenTap</h3>
+<p>Лучшая игра 2026 года про то, как тапать Кракена. Просто, быстро и затягивает.</p>
+<span class="chip">Java</span><span class="chip">Игра</span><span class="chip">Open source</span>
+<div style="margin-top:12px"><a href="https://github.com/relativity-I/KrackenTap">Открыть репозиторий →</a></div>
+</div>
+</div>
+<div class="stats">
+<div class="card"><b>1</b><span>репозиторий</span></div>
+<div class="card"><b>Java</b><span>основной язык</span></div>
+<div class="card"><b id="n">0</b><span>терминов в словарике</span></div>
+</div>
+</section>
+
+<section id="gloss">
+<h2>Словарик программиста <small>для себя и друзей</small></h2>
+<div class="bar">
+<input id="q" type="search" placeholder="Поиск по терминам…" aria-label="Поиск">
+<div class="f" id="f"></div>
+</div>
+<div class="g" id="g"></div>
+<div id="no">Ничего не найдено. Попробуйте другой запрос.</div>
+</section>
+</main>
+
+<footer><div class="w">© 2026 relativity-I · <a href="https://github.com/relativity-I">github.com/relativity-I</a></div></footer>
+
+<script>
+var T=[
+["Основы","Переменная","Именованная ячейка памяти для хранения значения, которое может меняться."],
+["Основы","Константа","Значение, которое задаётся один раз и не меняется (в Java — final)."],
+["Основы","Тип данных","Определяет, какие значения может хранить переменная: int, double, boolean, String."],
+["Основы","Функция / метод","Именованный блок кода, который можно вызывать многократно, передавая параметры."],
+["Основы","Цикл","Конструкция для повторения кода: for, while, do-while."],
+["Основы","Условие","Ветвление логики через if/else и switch в зависимости от выражения."],
+["Основы","Рекурсия","Когда функция вызывает саму себя. Нужно базовое условие выхода, иначе будет переполнение стека."],
+["Основы","Алгоритм","Пошаговая инструкция решения задачи. Оценивается по времени и памяти."],
+["Основы","Big O","Нотация, описывающая рост времени или памяти алгоритма с ростом входных данных: O(1), O(n), O(n²)."],
+["Основы","Отладка (debug)","Поиск и исправление ошибок с помощью брейкпоинтов, логов и пошагового выполнения."],
+["Основы","Исключение","Ошибка во время выполнения. Обрабатывается через try/catch, чтобы программа не падала."],
+["Основы","Компиляция","Перевод исходного кода в машинный код или байткод до запуска программы."],
+["Структуры данных","Массив","Набор элементов одного типа с доступом по индексу. Быстрое чтение, фиксированный размер."],
+["Структуры данных","Список (List)","Динамическая коллекция элементов. В Java: ArrayList, LinkedList."],
+["Структуры данных","Хэш-таблица / Map","Хранит пары «ключ → значение» с быстрым поиском. В Java: HashMap."],
+["Структуры данных","Set (множество)","Коллекция уникальных элементов без дубликатов: HashSet, TreeSet."],
+["Структуры данных","Стек","Структура LIFO: последний пришёл — первый вышел. Операции push и pop."],
+["Структуры данных","Очередь","Структура FIFO: первый пришёл — первый вышел. Используется в задачах и событиях."],
+["Структуры данных","Дерево","Иерархическая структура из узлов. Бинарное дерево поиска ускоряет поиск до O(log n)."],
+["Структуры данных","Граф","Набор вершин и рёбер между ними. Моделирует карты, сети и связи."],
+["Java и ООП","JVM","Java Virtual Machine — виртуальная машина, исполняющая Java-байткод на любой платформе."],
+["Java и ООП","JDK / JRE","JDK — набор для разработки (компилятор, инструменты), JRE — среда для запуска программ."],
+["Java и ООП","ООП","Объектно-ориентированное программирование: код организован вокруг объектов и классов."],
+["Java и ООП","Класс и объект","Класс — шаблон, объект — его экземпляр с собственными данными."],
+["Java и ООП","Наследование","Класс перенимает поля и методы родителя (extends) и может их расширять."],
+["Java и ООП","Полиморфизм","Один интерфейс — разные реализации. Объекты разных классов отвечают на один вызов по-своему."],
+["Java и ООП","Инкапсуляция","Скрытие внутренних данных объекта и доступ к ним через методы (private + геттеры)."],
+["Java и ООП","Интерфейс","Контракт, описывающий методы, которые класс обязан реализовать."],
+["Java и ООП","Garbage Collector","Автоматическая сборка мусора: освобождение памяти от объектов, на которые нет ссылок."],
+["Java и ООП","Maven / Gradle","Системы сборки: управляют зависимостями, компилируют и упаковывают Java-проекты."],
+["Java и ООП","Generics","Обобщения: классы и методы, работающие с разными типами безопасно, например List&lt;String&gt;."],
+["Java и ООП","Lambda","Короткая анонимная функция. Используется со Stream API и обработчиками событий."],
+["Игры","Game Loop","Главный цикл игры: обработка ввода → обновление состояния → отрисовка."],
+["Игры","FPS","Кадров в секунду. 60 FPS считается плавной игрой."],
+["Игры","Sprite","Двумерное изображение персонажа или объекта в игре."],
+["Игры","Hitbox","Невидимая область объекта для проверки столкновений и попаданий (тапа по Кракену)."],
+["Игры","Collision Detection","Определение пересечений объектов: прямоугольников, кругов, пикселей."],
+["Игры","Delta Time","Время между кадрами. Нужно, чтобы скорость игры не зависела от мощности устройства."],
+["Игры","Игровой движок","Готовая основа для игр: графика, физика, звук. Например Unity, Godot, libGDX."],
+["Игры","Геймплей-луп","Повторяющийся цикл действий игрока: тап → награда → апгрейд → снова тап."],
+["Веб и сети","HTTP / HTTPS","Протокол обмена данными в вебе. HTTPS добавляет шифрование."],
+["Веб и сети","API","Набор правил взаимодействия программ. REST API передаёт данные через HTTP в формате JSON."],
+["Веб и сети","JSON","Текстовый формат данных из пар «ключ-значение». Основа общения клиента с сервером."],
+["Веб и сети","WebSocket","Постоянное двустороннее соединение для чатов и онлайн-игр в реальном времени."],
+["Веб и сети","DNS","Система, превращающая доменные имена в IP-адреса."],
+["Веб и сети","Фронтенд / Бэкенд","Фронтенд — то, что видит пользователь. Бэкенд — сервер, базы данных и логика."],
+["Веб и сети","SQL / База данных","Язык запросов к реляционным базам (SELECT, INSERT, JOIN) для хранения данных."],
+["Инструменты","Git","Система контроля версий: хранит историю изменений и позволяет работать в команде."],
+["Инструменты","Commit / Push","Commit фиксирует изменения локально, push отправляет их на GitHub."],
+["Инструменты","Branch","Ветка разработки: изолированная копия кода для новой функции или исправления."],
+["Инструменты","Pull Request","Запрос на слияние ветки в основную с обсуждением и ревью кода."],
+["Инструменты","Issue","Задача или баг-репорт в репозитории на GitHub."],
+["Инструменты","README","Файл-визитка проекта: что это, как запустить, как внести вклад."],
+["Инструменты","IDE","Среда разработки с редактором, отладчиком и сборкой: IntelliJ IDEA, VS Code, Android Studio."],
+["Инструменты","CI/CD","Автоматическая сборка, тестирование и выкладка кода при каждом изменении (GitHub Actions)."],
+["Практики","Рефакторинг","Улучшение структуры кода без изменения поведения."],
+["Практики","Технический долг","Быстрые, но неидеальные решения, которые потом замедляют разработку."],
+["Практики","Unit-тест","Автоматическая проверка маленького куска кода: метода или класса (JUnit в Java)."],
+["Практики","Code Review","Проверка кода коллегами перед слиянием. Ловит баги и улучшает качество."],
+["Практики","DRY / KISS","DRY — не повторяйся. KISS — делай проще. Базовые принципы чистого кода."],
+["Практики","SOLID","Пять принципов проектирования ООП-кода, делающих его гибким и поддерживаемым."],
+["Практики","MVP","Минимально жизнеспособный продукт: ключевые функции для быстрой проверки идеи."],
+["Практики","Agile / Scrum","Гибкая разработка короткими спринтами с частыми релизами."],
+["Мобайл","SDK","Набор инструментов и библиотек для разработки под платформу."],
+["Мобайл","APK / IPA","Файлы готовых приложений для Android и iOS."],
+["Мобайл","Нативная разработка","Приложения на родных языках платформы: Kotlin/Java для Android, Swift для iOS."],
+["Мобайл","Кроссплатформа","Один код для iOS и Android: Flutter, React Native."],
+["Мобайл","Push-уведомления","Сообщения от сервера на устройство, даже когда приложение закрыто."],
+["Мобайл","Офлайн-режим","Работа без интернета через локальную базу и кэш."],
+["Мобайл","Холодный старт","Запуск приложения с нуля, когда его нет в памяти."],
+["Мобайл","Фича-флаг","Переключатель функции без нового релиза."],
+["Мобайл","Монетизация (IAP)","Встроенные покупки и подписки в приложении."],
+["Мобайл","ASO","Оптимизация страницы приложения в магазине для роста установок."]
+];
+var cats=["Все"];T.forEach(function(t){if(cats.indexOf(t[0])<0)cats.push(t[0])});
+var cur="Все",q=document.getElementById("q"),g=document.getElementById("g"),f=document.getElementById("f"),no=document.getElementById("no");
+document.getElementById("n").textContent=T.length;
+function render(){
+  var s=q.value.toLowerCase(),h="",n=0;
+  T.forEach(function(t){
+    if((cur=="Все"||t[0]==cur)&&(t[1]+" "+t[2]).toLowerCase().indexOf(s)>-1){
+      n++;h+='<div class="t"><em>'+t[0]+'</em><h4>'+t[1]+'</h4><p>'+t[2]+'</p></div>';
+    }
+  });
+  g.innerHTML=h;no.style.display=n?"none":"block";
+  f.innerHTML="";
+  cats.forEach(function(c){
+    var b=document.createElement("button");
+    b.textContent=c+" "+(c=="Все"?T.length:T.filter(function(t){return t[0]==c}).length);
+    if(c==cur)b.className="on";
+    b.onclick=function(){cur=c;render()};
+    f.appendChild(b);
+  });
+}
+q.oninput=render;render();
+</script>
+</body>
+</html>
